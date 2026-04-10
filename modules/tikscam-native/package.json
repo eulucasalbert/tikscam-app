@@ -1,0 +1,9 @@
+{
+  "name": "tikscam-native",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "types": "index.tsx",
+  "peerDependencies": {
+    "expo": "*"
+  }
+}

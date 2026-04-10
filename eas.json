@@ -1,0 +1,22 @@
+{
+  "cli": {
+    "version": ">= 3.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "production": {
+      "ios": {
+        "buildConfiguration": "Release",
+        "autoIncrement": true
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "eulucasalbert@gmail.com",
+        "appleTeamId": "QLU4TYY65X"
+      }
+    }
+  }
+}

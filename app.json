@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "TiksCam",
+    "slug": "tikscam-app",
+    "version": "2.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d1117"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lucasalbert.tikscam",
+      "infoPlist": {
+        "NSCameraUsageDescription": "TiksCam precisa da camera para transmitir video para o OBS Studio",
+        "NSMicrophoneUsageDescription": "TiksCam precisa do microfone para transmitir audio para o OBS Studio",
+        "NSLocalNetworkUsageDescription": "TiksCam usa a rede local para enviar video ao OBS Studio no computador",
+        "NSBonjourServices": [
+          "_droidcamobs._tcp"
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0d1117"
+      },
+      "package": "com.lucasalbert.tikscam",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "TiksCam precisa da camera para transmitir video para o OBS Studio",
+          "microphonePermission": "TiksCam precisa do microfone para transmitir audio para o OBS Studio"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8bc700f6-8f5d-4f89-91ca-2dbb3503b1b3"
+      }
+    }
+  }
+}
